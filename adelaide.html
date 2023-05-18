@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Adelaide |  Congestion Report 2022</title>
+<meta name="author" content="Richard Green and Weihua Chen">
+<meta name="description" content="Note: Shape size denotes 2022 weights in city-wide measures. There was no consistent pattern to changes in mean average travel time between 2021 and 2022 across Adelaide metropolitan area key...">
+<meta name="generator" content="bookdown 0.33 with bs4_book()">
+<meta property="og:title" content="Adelaide |  Congestion Report 2022">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/media/image124.jpeg">
+<meta property="og:description" content="Note: Shape size denotes 2022 weights in city-wide measures. There was no consistent pattern to changes in mean average travel time between 2021 and 2022 across Adelaide metropolitan area key...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Adelaide |  Congestion Report 2022">
+<meta name="twitter:description" content="Note: Shape size denotes 2022 weights in city-wide measures. There was no consistent pattern to changes in mean average travel time between 2021 and 2022 across Adelaide metropolitan area key...">
+<meta name="twitter:image" content="/media/image124.jpeg">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Crimson_Pro-0.4.5/font.css" rel="stylesheet">
+<link href="libs/Roboto_Mono-0.4.5/font.css" rel="stylesheet">
+<link href="libs/Roboto-0.4.5/font.css" rel="stylesheet">
+<script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title=""><div class="inline-figure">
+<img src="media/bitre.png" style="width:100.0%">
+Congestion Report 2022</div></a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">At a glance</a></li>
+<li><a class="" href="citywide-congestion-index-results.html">Citywide congestion index results</a></li>
+<li><a class="" href="sydney.html">Sydney</a></li>
+<li><a class="" href="melbourne.html">Melbourne</a></li>
+<li><a class="" href="brisbane.html">Brisbane</a></li>
+<li><a class="active" href="adelaide.html">Adelaide</a></li>
+<li><a class="" href="perth.html">Perth</a></li>
+<li><a class="" href="appendices-and-references.html">Appendices and References</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="adelaide" class="section level1 unnumbered">
+<h1>Adelaide<a class="anchor" aria-label="anchor" href="#adelaide"><i class="fas fa-link"></i></a>
+</h1>
+<p><img src="media/image10.png" style="width:100.0%"><font size="1">Note: Shape size denotes 2022 weights in city-wide measures.</font></p>
+<p>There was no consistent pattern to changes in mean average travel time between 2021 and 2022 across Adelaide metropolitan area key freight vehicle routes. Two routes – the A14 and A22 – exhibited an increase in mean average travel time in one direction and a decrease in the other direction. Average travel times fell between 2021 and 2022 across the majority of routes, however these decreases were almost equally offset by measured increased travel times on the A2-M2 route, such that the city wide METR measure remained stable.</p>
+<p>Travel time uncertainty exhibited little change across most routes between 2021 and 2022. However, increases on the heavily-weighted A2-M2 and a large increase in travel time uncertainty on the A20 (southbound) resulted in an increase in the overall city-wide measure.</p>
+<div class="inline-figure"><img src="media/image9.png" style="width:100.0%"></div>
+<p><font size="1">Ratio of median travel time to best (shortest) travel time for each route.</font></p>
+<hr>
+<div id="a14---port-road-to-southern-expressway-southern-expressway-to-port-road" class="section level2 unnumbered">
+<h2>A14 - Port Road to Southern Expressway / Southern Expressway to Port Road<a class="anchor" aria-label="anchor" href="#a14---port-road-to-southern-expressway-southern-expressway-to-port-road"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route traverses Adelaide’s eastern suburbs and links Port Road (A7) at West Croydon in the north with the A13 at Darlington in the south. It passes Richmond near the Adelaide Airport and Plympton along the way. The route comprises several different roads including Holbrooks Road, Marion Road and Henley Beach Road.</p>
+<div class="inline-figure"><img src="media/image169.png" style="width:100.0%"></div>
+<p><span id="Xd25f4b0e0b7c76b7658766b81163db72e0e6dc4" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Port Road to Southern Expressway</td>
+<td>00:17:42</td>
+<td>00:23:12</td>
+<td>1.185</td>
+<td>00:07:09</td>
+<td>00:18:08</td>
+<td>1.682</td>
+<td>15.0</td>
+</tr>
+<tr class="even">
+<td>Southern Expressway to Port Road</td>
+<td>00:18:21</td>
+<td>00:24:42</td>
+<td>1.193</td>
+<td>00:05:54</td>
+<td>00:17:50</td>
+<td>2.190</td>
+<td>15.0</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times for journeys from Port Road to the Southern Expressway was approximately 18 minutes at 5am and the lowest uncertainty was at 5am with an interquartile range of around 7 minutes. The longest median travel times and greatest uncertainty were at 3am with a median of around 23 minutes and an interquartile range of around 18 minutes.</p>
+<p>The best median travel times for journeys from the Southern Expressway to Port Road was approximately 18 minutes at 5am and the lowest uncertainty was also at 5am with an interquartile range of around 6 minutes. The longest median travel times was at 4pm with a median of almost 25 minutes and the greatest uncertainty at 8am with an interquartile range of almost 18 minutes.</p>
+<div class="inline-figure"><img src="media/image170.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image171.png" style="width:100.0%"></div>
+</div>
+<div id="a15---anzac-highway-to-port-road-port-road-to-anzac-highway" class="section level2 unnumbered">
+<h2>A15 - ANZAC Highway to Port Road / Port Road to ANZAC Highway<a class="anchor" aria-label="anchor" href="#a15---anzac-highway-to-port-road-port-road-to-anzac-highway"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route traverses the western suburbs of Adelaide between Glenelg and Queenstown-Alberton. Its northern sections run parallel to the A14 route (presented above), but passes west of Adelaide Airport. This route is also known as Tapleys Hill Road.</p>
+<div class="inline-figure"><img src="media/image172.png" style="width:100.0%"></div>
+<p><span id="X61b100e2e7d9cb1dfb9ceb948e5fee447ac62da" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>ANZAC Highway to Port Road</td>
+<td>00:13:26</td>
+<td>00:17:42</td>
+<td>1.133</td>
+<td>00:02:55</td>
+<td>00:09:32</td>
+<td>2.223</td>
+<td>13.1</td>
+</tr>
+<tr class="even">
+<td>Port Road to ANZAC Highway</td>
+<td>00:13:56</td>
+<td>00:20:10</td>
+<td>1.130</td>
+<td>00:03:10</td>
+<td>00:13:41</td>
+<td>2.042</td>
+<td>13.0</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from ANZAC Highway to Port Road were at 5am with a median travel time of 13.5 minutes and an interquartile range of around 3 minutes. The longest median travel times was at 4pm with a median of almost 18 minutes and the greatest uncertainty at 11am with an interquartile range of 9.5 minutes.</p>
+<p>The best median travel times for journeys from Port Road to ANZAC Highway was just under 14 minutes at 5am and the lowest uncertainty was also at 5am with an interquartile range of just over 3 minutes. The longest median travel times and greatest uncertainty were at 2am with a median of around 20 minutes and an interquartile range of just under 14 minutes.</p>
+<div class="inline-figure"><img src="media/image173.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image174.png" style="width:100.0%"></div>
+</div>
+<div id="a16---hampstead-road-to-outer-harbor-outer-harbor-to-hampstead-road" class="section level2 unnumbered">
+<h2>A16 - Hampstead Road to Outer Harbor / Outer Harbor to Hampstead Road<a class="anchor" aria-label="anchor" href="#a16---hampstead-road-to-outer-harbor-outer-harbor-to-hampstead-road"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route connects Port of Adelaide, at Outer Harbor, to north Adelaide at Hampstead Road (A17). It uses Grand Junction Road, Causeway Road and Semaphore Road and Victoria Road through the suburbs of Ethelton and Birkenhead.</p>
+<div class="inline-figure"><img src="media/image175.png" style="width:100.0%"></div>
+<p><span id="X126426b4554c6383f476e5c37daa5c73b1e337c" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Hampstead Road to Outer Harbor</td>
+<td>00:23:56</td>
+<td>00:28:11</td>
+<td>1.074</td>
+<td>00:08:32</td>
+<td>00:16:58</td>
+<td>1.354</td>
+<td>20.7</td>
+</tr>
+<tr class="even">
+<td>Outer Harbor to Hampstead Road</td>
+<td>00:24:03</td>
+<td>00:27:28</td>
+<td>1.059</td>
+<td>00:08:40</td>
+<td>00:14:02</td>
+<td>1.271</td>
+<td>20.8</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from Hampstead Road to Outer Harbor were at 5am with a median travel time of approximately 24 minutes and an interquartile range of 8.5 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of around 28 minutes and an interquartile range of 17 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from Outer Harbor to Hampstead Road were at 4am with a median travel time of 24 minutes and an interquartile range of almost 9 minutes. The longest median travel times and greatest uncertainty were at 5pm with a median of 27.5 minutes and an interquartile range of 14 minutes.</p>
+<div class="inline-figure"><img src="media/image176.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image177.png" style="width:100.0%"></div>
+</div>
+<div id="a17---grand-junction-road-to-south-eastern-freeway-south-eastern-freeway-to-grand-junction-road" class="section level2 unnumbered">
+<h2>A17 - Grand Junction Road to South Eastern Freeway / South Eastern Freeway to Grand Junction Road<a class="anchor" aria-label="anchor" href="#a17---grand-junction-road-to-south-eastern-freeway-south-eastern-freeway-to-grand-junction-road"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route extends from the A16 (Grand Junction Road) south through Adelaide’s eastern suburbs to the junction of the South Eastern Freeway and Cross Road at Glen Osmond. The route traverses Hampstead Road, Ascot Avenue and Portrush Road along its length.</p>
+<div class="inline-figure"><img src="media/image178.png" style="width:100.0%"></div>
+<p><span id="Xc1b836c2cd912405bbdb7a191bc1e802142afa1" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Grand Junction Road to South Eastern Freeway</td>
+<td>00:14:27</td>
+<td>00:18:53</td>
+<td>1.136</td>
+<td>00:02:07</td>
+<td>00:10:30</td>
+<td>2.710</td>
+<td>13.6</td>
+</tr>
+<tr class="even">
+<td>South Eastern Freeway to Grand Junction Road</td>
+<td>00:14:33</td>
+<td>00:20:54</td>
+<td>1.172</td>
+<td>00:02:41</td>
+<td>00:16:16</td>
+<td>2.855</td>
+<td>13.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from Grand Junction Road to the South Eastern Freeway were at 4am with a median travel time of 14.5 minutes and an interquartile range of around 2 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of almost 19 minutes and an interquartile range of 10.5 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from South Eastern Freeway to Grand Junction Road were at 4am with a median travel time of 14.5 minutes and an interquartile range of almost 3 minutes. The longest median travel times were at 4pm with a median of around 21 minutes and the greatest uncertainty at 8am with an interquartile range of just over 16 minutes.</p>
+<div class="inline-figure"><img src="media/image179.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image180.png" style="width:100.0%"></div>
+</div>
+<div id="a2-m2---main-south-road-to-port-river-expressway-port-river-expressway-to-main-south-road" class="section level2 unnumbered">
+<h2>A2-M2 - Main South Road to Port River Expressway / Port River Expressway to Main South Road<a class="anchor" aria-label="anchor" href="#a2-m2---main-south-road-to-port-river-expressway-port-river-expressway-to-main-south-road"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route, the only Adelaide route in this report with including motorway sections, traverses Adelaide north to south. It follows the A2 and the M2, from the Port River Expressway (A9) at Angle Park to the Main South Road at Noarlunga Downs. This route uses the Southern Expressway (M2), South Road (A2) and the North-South Motorway (M2). It does not include the Northern Connector opened in March 2020.</p>
+<div class="inline-figure"><img src="media/image181.png" style="width:100.0%"></div>
+<p><span id="Xa64ba5961f6c6ac8924875ed10de7752cee6bbd" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Main South Road to Port River Expressway</td>
+<td>00:32:25</td>
+<td>00:42:45</td>
+<td>1.131</td>
+<td>00:06:04</td>
+<td>00:29:23</td>
+<td>2.377</td>
+<td>40.1</td>
+</tr>
+<tr class="even">
+<td>Port River Expressway to Main South Road</td>
+<td>00:31:50</td>
+<td>00:41:01</td>
+<td>1.139</td>
+<td>00:05:25</td>
+<td>00:22:26</td>
+<td>2.480</td>
+<td>39.8</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from Main South Road to the Port River Expressway were at 5am with a median travel time of approximately 32.5 minutes and an interquartile range of 6 minutes. The longest median travel times was at 4pm with a median of around 43 minutes and the greatest uncertainty at 8am with an interquartile range of just over 29 minutes.</p>
+<p>The best median travel times for journeys from the Port River Expressway to Main South Road was around 32 minutes at 4am and the lowest uncertainty was also at 4am with an interquartile range of 5.5 minutes. The longest median travel times was 41 minutes at 3pm and the greatest uncertainty was at 4pm with an interquartile range of around 22.5 minutes.</p>
+<div class="inline-figure"><img src="media/image182.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image183.png" style="width:100.0%"></div>
+</div>
+<div id="a20---grand-junction-road-to-sturt-highway-sturt-highway-to-grand-junction-road" class="section level2 unnumbered">
+<h2>A20 - Grand Junction Road to Sturt Highway / Sturt Highway to Grand Junction Road<a class="anchor" aria-label="anchor" href="#a20---grand-junction-road-to-sturt-highway-sturt-highway-to-grand-junction-road"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route follows the A20 (comprising Main North Road and the Gawler Bypass) from Grand Junction Road at Gepps Cross north to the Stuart Highway near Gawler, and passes through Evanston Park, Blakeview, Elizabeth, Salisbury Park and Mawson Lakes.</p>
+<div class="inline-figure"><img src="media/image184.png" style="width:100.0%"></div>
+<p><span id="X9dcc20213991a67f9b72b99e81d332fd956cd5a" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Grand Junction Road to Sturt Highway</td>
+<td>00:27:49</td>
+<td>00:36:18</td>
+<td>1.166</td>
+<td>00:11:47</td>
+<td>00:29:30</td>
+<td>1.603</td>
+<td>32.4</td>
+</tr>
+<tr class="even">
+<td>Sturt Highway to Grand Junction Road</td>
+<td>00:25:17</td>
+<td>00:35:01</td>
+<td>1.223</td>
+<td>00:03:36</td>
+<td>00:23:24</td>
+<td>4.460</td>
+<td>32.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times for journeys from Grand Junction Road to the Sturt Highway was approximately 28 minutes at 4am and the lowest uncertainty was also at 4am with an interquartile range of almost 12 minutes. The longest median travel times and greatest uncertainty were at 1am with a median of around 36 minutes and an interquartile range of 29.5 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from the Sturt Highway to Grand Junction Road were at 4am with a median travel time of around 25 minutes and an interquartile range of almost 4 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of 35 minutes and an interquartile range of 23.5 minutes.</p>
+<div class="inline-figure"><img src="media/image185.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image186.png" style="width:100.0%"></div>
+</div>
+<div id="a22---park-terrace-to-port-wakefield-road-port-wakefield-road-to-park-terrace" class="section level2 unnumbered">
+<h2>A22 - Park Terrace to Port Wakefield Road / Port Wakefield Road to Park Terrace<a class="anchor" aria-label="anchor" href="#a22---park-terrace-to-port-wakefield-road-port-wakefield-road-to-park-terrace"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route extends from Park Terrace at north Adelaide north to the Princes Highway (A1, Port Wakefield Road) at Gepps Cross. It uses Churchill Road and Cavan Road, crossing Grand Junction Road (A16) along its length.</p>
+<div class="inline-figure"><img src="media/image187.png" style="width:100.0%"></div>
+<p><span id="X0221f48a1134658636e697da5e0494705c312f1" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Park Terrace to Port Wakefield Road</td>
+<td>00:08:13</td>
+<td>00:10:26</td>
+<td>1.168</td>
+<td>00:01:47</td>
+<td>00:04:52</td>
+<td>1.884</td>
+<td>7.7</td>
+</tr>
+<tr class="even">
+<td>Port Wakefield Road to Park Terrace</td>
+<td>00:08:24</td>
+<td>00:10:55</td>
+<td>1.122</td>
+<td>00:01:59</td>
+<td>00:07:02</td>
+<td>2.143</td>
+<td>7.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times for journeys from Park Terrace to Port Wakefield Road was around 8 minutes at 4am and the lowest uncertainty was also at 4am with an interquartile range of almost 2 minutes. The longest median travel times and greatest uncertainty were at 9am with a median of 10.5 minutes and an interquartile range of nearly 5 minutes.</p>
+<p>The best travel times and lowest uncertainty travelling from Port Wakefield Road to Park Terrace were at 9pm and 3am, respectively, with a median travel time of 8.5 minutes and an interquartile range of 2 minutes. The longest median travel times was at 2am with a median of around 11 minutes and the greatest uncertainty at 9am with an interquartile range of 7 minutes.</p>
+<div class="inline-figure"><img src="media/image188.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image189.png" style="width:100.0%"></div>
+</div>
+<div id="a3---anzac-highway-to-south-eastern-freeway-south-eastern-freeway-to-anzac-highway" class="section level2 unnumbered">
+<h2>A3 - ANZAC Highway to South Eastern Freeway / South Eastern Freeway to ANZAC Highway<a class="anchor" aria-label="anchor" href="#a3---anzac-highway-to-south-eastern-freeway-south-eastern-freeway-to-anzac-highway"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route follows Cross Road (A3) between the ANZAC Highway (A5) and the South Eastern Freeway at Glen Osmond. It traverses Adelaide’s Southern Suburbs.</p>
+<div class="inline-figure"><img src="media/image190.png" style="width:100.0%"></div>
+<p><span id="Xed616c16dad14577108c846397f407e7236a181" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>ANZAC Highway to South Eastern Freeway</td>
+<td>00:10:05</td>
+<td>00:15:12</td>
+<td>1.266</td>
+<td>00:03:52</td>
+<td>00:12:41</td>
+<td>2.140</td>
+<td>8.7</td>
+</tr>
+<tr class="even">
+<td>South Eastern Freeway to ANZAC Highway</td>
+<td>00:09:34</td>
+<td>00:14:54</td>
+<td>1.289</td>
+<td>00:02:22</td>
+<td>00:12:48</td>
+<td>3.134</td>
+<td>8.7</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from ANZAC Highway to the South Eastern Freeway were at 4am with a median travel time of 10 minutes and an interquartile range of around 4 minutes. The longest median travel times was around 15 minutes at 3pm and the greatest uncertainty was at 8am with an interquartile range of almost 13 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from the South Eastern Freeway to ANZAC Highway were at 4am with a median travel time of 9.5 minutes and an interquartile range of approximately 2 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of around 15 minutes and an interquartile range of nearly 13 minutes.</p>
+<div class="inline-figure"><img src="media/image191.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image192.png" style="width:100.0%"></div>
+</div>
+<div id="a9---nelson-st-to-port-wakefield-road-port-wakefield-road-to-nelson-street" class="section level2 unnumbered">
+<h2>A9 - Nelson St to Port Wakefield Road / Port Wakefield Road to Nelson Street<a class="anchor" aria-label="anchor" href="#a9---nelson-st-to-port-wakefield-road-port-wakefield-road-to-nelson-street"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route traverses the light industrial areas on Adelaide’s northern fringe. It links Victoria Road and Nelson Street at Birkenhead and the Princes Highway (Port Wakefield Road, A1) at Mawson Lakes, and is an important link for freight from northern Adelaide to the port. It is known at different points on its route as the Port River Expressway and the Salisbury Highway.</p>
+<div class="inline-figure"><img src="media/image193.png" style="width:100.0%"></div>
+<p><span id="X129af85fe6a6a7dc43ed6c4c58a95348acedf56" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Nelson St to Port Wakefield Road</td>
+<td>00:08:41</td>
+<td>00:09:06</td>
+<td>1.026</td>
+<td>00:02:06</td>
+<td>00:03:00</td>
+<td>1.253</td>
+<td>10.2</td>
+</tr>
+<tr class="even">
+<td>Port Wakefield Road to Nelson Street</td>
+<td>00:08:09</td>
+<td>00:09:19</td>
+<td>1.048</td>
+<td>00:01:17</td>
+<td>00:04:44</td>
+<td>1.764</td>
+<td>10.2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from Nelson St to Port Wakefield Road were at 4am with a median travel time of around 9 minutes and an interquartile range of just over 2 minutes. The longest median travel times was around 9 minutes at 2am and the greatest uncertainty was at 4pm with an interquartile range of 3 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from Port Wakefield Road to Nelson Street were at 1am with a median travel time of approximately 8 minutes and an interquartile range of 77 seconds. The longest median travel times and greatest uncertainty were at 5pm with a median of around 9 minutes and an interquartile range of just under 5 minutes.</p>
+<div class="inline-figure"><img src="media/image194.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image195.png" style="width:100.0%"></div>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="brisbane.html">Brisbane</a></div>
+<div class="next"><a href="perth.html">Perth</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#adelaide">Adelaide</a></li>
+<li><a class="nav-link" href="#a14---port-road-to-southern-expressway-southern-expressway-to-port-road">A14 - Port Road to Southern Expressway / Southern Expressway to Port Road</a></li>
+<li><a class="nav-link" href="#a15---anzac-highway-to-port-road-port-road-to-anzac-highway">A15 - ANZAC Highway to Port Road / Port Road to ANZAC Highway</a></li>
+<li><a class="nav-link" href="#a16---hampstead-road-to-outer-harbor-outer-harbor-to-hampstead-road">A16 - Hampstead Road to Outer Harbor / Outer Harbor to Hampstead Road</a></li>
+<li><a class="nav-link" href="#a17---grand-junction-road-to-south-eastern-freeway-south-eastern-freeway-to-grand-junction-road">A17 - Grand Junction Road to South Eastern Freeway / South Eastern Freeway to Grand Junction Road</a></li>
+<li><a class="nav-link" href="#a2-m2---main-south-road-to-port-river-expressway-port-river-expressway-to-main-south-road">A2-M2 - Main South Road to Port River Expressway / Port River Expressway to Main South Road</a></li>
+<li><a class="nav-link" href="#a20---grand-junction-road-to-sturt-highway-sturt-highway-to-grand-junction-road">A20 - Grand Junction Road to Sturt Highway / Sturt Highway to Grand Junction Road</a></li>
+<li><a class="nav-link" href="#a22---park-terrace-to-port-wakefield-road-port-wakefield-road-to-park-terrace">A22 - Park Terrace to Port Wakefield Road / Port Wakefield Road to Park Terrace</a></li>
+<li><a class="nav-link" href="#a3---anzac-highway-to-south-eastern-freeway-south-eastern-freeway-to-anzac-highway">A3 - ANZAC Highway to South Eastern Freeway / South Eastern Freeway to ANZAC Highway</a></li>
+<li><a class="nav-link" href="#a9---nelson-st-to-port-wakefield-road-port-wakefield-road-to-nelson-street">A9 - Nelson St to Port Wakefield Road / Port Wakefield Road to Nelson Street</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong><div class="inline-figure">
+<img src="media/bitre.png" style="width:100.0%">
+Congestion Report 2022</div></strong>" was written by Richard Green and Weihua Chen. It was last built on 2023-05-18.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Melbourne |  Congestion Report 2022</title>
+<meta name="author" content="Richard Green and Weihua Chen">
+<meta name="description" content="Note: Shape size denotes 2022 weights in city-wide measures. Travel time congestion changed unevenly across Melbourne arterial roads, with both large increases and large decreases, but most...">
+<meta name="generator" content="bookdown 0.33 with bs4_book()">
+<meta property="og:title" content="Melbourne |  Congestion Report 2022">
+<meta property="og:type" content="book">
+<meta property="og:image" content="/media/image124.jpeg">
+<meta property="og:description" content="Note: Shape size denotes 2022 weights in city-wide measures. Travel time congestion changed unevenly across Melbourne arterial roads, with both large increases and large decreases, but most...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Melbourne |  Congestion Report 2022">
+<meta name="twitter:description" content="Note: Shape size denotes 2022 weights in city-wide measures. Travel time congestion changed unevenly across Melbourne arterial roads, with both large increases and large decreases, but most...">
+<meta name="twitter:image" content="/media/image124.jpeg">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Crimson_Pro-0.4.5/font.css" rel="stylesheet">
+<link href="libs/Roboto_Mono-0.4.5/font.css" rel="stylesheet">
+<link href="libs/Roboto-0.4.5/font.css" rel="stylesheet">
+<script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title=""><div class="inline-figure">
+<img src="media/bitre.png" style="width:100.0%">
+Congestion Report 2022</div></a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">At a glance</a></li>
+<li><a class="" href="citywide-congestion-index-results.html">Citywide congestion index results</a></li>
+<li><a class="" href="sydney.html">Sydney</a></li>
+<li><a class="active" href="melbourne.html">Melbourne</a></li>
+<li><a class="" href="brisbane.html">Brisbane</a></li>
+<li><a class="" href="adelaide.html">Adelaide</a></li>
+<li><a class="" href="perth.html">Perth</a></li>
+<li><a class="" href="appendices-and-references.html">Appendices and References</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="melbourne" class="section level1 unnumbered">
+<h1>Melbourne<a class="anchor" aria-label="anchor" href="#melbourne"><i class="fas fa-link"></i></a>
+</h1>
+<p><img src="media/image6.png" style="width:100.0%"><font size="1">Note: Shape size denotes 2022 weights in city-wide measures.</font></p>
+<p>Travel time congestion changed unevenly across Melbourne arterial roads, with both large increases and large decreases, but most motorway routes exhibited increases, particularly on the M1 East (Monash Freeway) and the M80 (the Western Ring Road), both of which are major freight routes. These routes contributed to city wide increases. However, there was little change in congestion uncertainty across most routes, with the notable exceptions of the M1 East and M3 where congestion uncertainty declined, which contributed to a city-wide decrease in congestion uncertainty.</p>
+<div class="inline-figure"><img src="media/image5.png" style="width:100.0%"></div>
+<p><font size="1">Ratio of median travel time to best (shortest) travel time for each route.</font></p>
+<hr>
+<div id="route-13-49---monash-freeway-to-south-gippsland-highway-south-gippsland-highway-to-monash-freeway" class="section level2 unnumbered">
+<h2>Route 13-49 - Monash Freeway to South Gippsland Highway / South Gippsland Highway to Monash Freeway<a class="anchor" aria-label="anchor" href="#route-13-49---monash-freeway-to-south-gippsland-highway-south-gippsland-highway-to-monash-freeway"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route arcs through Melbourne’s outer south eastern suburbs from the Monash Freeway at Glen Waverley to the South Gippsland Highway, just south of Dandenong. The route traverses the suburbs of Clayton, Springvale and Keysborough, and crosses the M3. It is known by several names including the Dandenong Bypass, Westall Road and Clayton Road and includes a small portion of the Princes Highway.</p>
+<div class="inline-figure"><img src="media/image79.png" style="width:100.0%"></div>
+<p><span id="X4278c72723db55431743ca1c048a5f37ae4df1d" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Monash Freeway to South Gippsland Highway</td>
+<td>00:13:40</td>
+<td>00:17:02</td>
+<td>1.112</td>
+<td>00:04:02</td>
+<td>00:09:31</td>
+<td>1.764</td>
+<td>14.8</td>
+</tr>
+<tr class="even">
+<td>South Gippsland Highway to Monash Freeway</td>
+<td>00:17:49</td>
+<td>00:22:02</td>
+<td>1.139</td>
+<td>00:06:35</td>
+<td>00:13:10</td>
+<td>1.571</td>
+<td>18.2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from the Monash Freeway to South Gippsland Highway were at 5am with a median travel time of just under 14 minutes and an interquartile range of 4 minutes. The longest median travel times and greatest uncertainty were at 5pm with a median of 17 minutes and an interquartile range of 9.5 minutes.</p>
+<p>The best median travel times for journeys from South Gippsland Highway to the Monash Freeway were around 18 minutes at 5am and the lowest uncertainty was at 5am with an interquartile range of 6.5 minutes. The longest median travel times were 22 minutes at 1am and the greatest uncertainty was at 2am with an interquartile range of around 13 minutes.</p>
+<div class="inline-figure"><img src="media/image80.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image81.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="route-15---beach-road-to-surrey-hills-surrey-hills-to-beach-road" class="section level2 unnumbered">
+<h2>Route 15 - Beach Road to Surrey Hills / Surrey Hills to Beach Road<a class="anchor" aria-label="anchor" href="#route-15---beach-road-to-surrey-hills-surrey-hills-to-beach-road"><i class="fas fa-link"></i></a>
+</h2>
+<p>This surface route extends from Canterbury Road in Surrey Hills to Beach Road in Parkdale. The route traverses Moorabbin, Oakleigh, the major retail precinct at Chadstone and Burwood in Melbourne’s south east, crossing the M1 (East) along the way. It is also known as Warrigal Road.</p>
+<div class="inline-figure"><img src="media/image82.png" style="width:100.0%"></div>
+<p><span id="Xb5154df4c5483b597cd5896acee4d4a8614584d" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Beach Road to Surrey Hills</td>
+<td>00:20:34</td>
+<td>00:30:55</td>
+<td>1.17</td>
+<td>00:06:12</td>
+<td>00:25:24</td>
+<td>1.872</td>
+<td>18.9</td>
+</tr>
+<tr class="even">
+<td>Surrey Hills to Beach Road</td>
+<td>00:19:41</td>
+<td>00:28:59</td>
+<td>1.20</td>
+<td>00:05:16</td>
+<td>00:20:21</td>
+<td>2.143</td>
+<td>18.9</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from Beach Road to Surrey Hills were at 3am with a median travel time of 20.5 minutes and an interquartile range of around 6 minutes. The longest median travel times were 31 minutes at 5pm and the greatest uncertainty was at 8am with an interquartile range of around 25 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from Surrey Hills to Beach Road were at 1am with a median travel time of around 20 minutes and an interquartile range of just over 5 minutes. The longest median travel times and greatest uncertainty was at 8am with a median of 29 minutes and an interquartile range of around 20 minutes.</p>
+<div class="inline-figure"><img src="media/image83.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image84.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="route-22---ferntree-gully-to-m1-m1-to-ferntree-gully" class="section level2 unnumbered">
+<h2>Route 22 - Ferntree Gully to M1 / M1 to Ferntree Gully<a class="anchor" aria-label="anchor" href="#route-22---ferntree-gully-to-m1-m1-to-ferntree-gully"><i class="fas fa-link"></i></a>
+</h2>
+<p>This surface route in Melbourne’s East starts at the M1 (east) at Notting Hill and extends east through Wheelers Hill and Knoxfield to Ferntree Gully. It services light industrial areas in the vicinity of the M3. It is also known as Ferntree Gully Road.</p>
+<div class="inline-figure"><img src="media/image85.png" style="width:100.0%"></div>
+<p><span id="Xfc8770e9e9ed1da774b009d8da74c632889e2bc" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Ferntree Gully to M1</td>
+<td>00:12:18</td>
+<td>00:18:03</td>
+<td>1.174</td>
+<td>00:04:46</td>
+<td>00:19:02</td>
+<td>1.826</td>
+<td>12.6</td>
+</tr>
+<tr class="even">
+<td>M1 to Ferntree Gully</td>
+<td>00:13:01</td>
+<td>00:15:49</td>
+<td>1.112</td>
+<td>00:04:33</td>
+<td>00:12:17</td>
+<td>1.687</td>
+<td>12.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from Ferntree Gully to the M1 were at 4am with a median travel time of around 12 minutes and an interquartile range of almost 5 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of 18 minutes and an interquartile range of 19 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from the M1 to Ferntree Gully were at 4am with a median travel time of 13 minutes and an interquartile range of 4.5 minutes. The longest median travel times and greatest uncertainty were at 5pm with a median of around 16 minutes and an interquartile range of approximately 12 minutes.</p>
+<div class="inline-figure"><img src="media/image86.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image87.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="route-3---albert-park-to-cheltenham-cheltenham-to-albert-park" class="section level2 unnumbered">
+<h2>Route 3 - Albert Park to Cheltenham / Cheltenham to Albert Park<a class="anchor" aria-label="anchor" href="#route-3---albert-park-to-cheltenham-cheltenham-to-albert-park"><i class="fas fa-link"></i></a>
+</h2>
+<p>This surface route travels south east from Albert Park, south-east of the Melbourne CBD, through St Kilda, Brighton and Moorabbin, to meet Route 15 (Warrigal Road) at Cheltenham/Mentone. It is also known as the Nepean Highway.</p>
+<div class="inline-figure"><img src="media/image88.png" style="width:100.0%"></div>
+<p><span id="Xbe5aa3819f567791129756b4610b7a98f4f171d" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Albert Park to Cheltenham</td>
+<td>00:14:39</td>
+<td>00:23:09</td>
+<td>1.250</td>
+<td>00:04:05</td>
+<td>00:20:39</td>
+<td>2.542</td>
+<td>16.1</td>
+</tr>
+<tr class="even">
+<td>Cheltenham to Albert Park</td>
+<td>00:15:30</td>
+<td>00:23:28</td>
+<td>1.231</td>
+<td>00:04:26</td>
+<td>00:20:06</td>
+<td>2.329</td>
+<td>16.0</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from Albert Park to Cheltenham were at 4am with a median travel time of just under 15 minutes and an interquartile range of 4 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of around 23 minutes and an interquartile range of around 21 minutes.</p>
+<p>The best median travel times for journeys from Cheltenham to Albert Park was 15.5 minutes at 2am and the lowest uncertainty was at 2am with an interquartile range of 4.5 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of 23.5 minutes and an interquartile range of around 20 minutes.</p>
+<div class="inline-figure"><img src="media/image89.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image90.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="route-32---derrimut-to-montrose-montrose-to-derrimut" class="section level2 unnumbered">
+<h2>Route 32 - Derrimut to Montrose / Montrose to Derrimut<a class="anchor" aria-label="anchor" href="#route-32---derrimut-to-montrose-montrose-to-derrimut"><i class="fas fa-link"></i></a>
+</h2>
+<p>This 53-kilometre route extends from Derrimut, west of the CBD, to Montrose on the eastern urban fringe. It crosses under the M80, passes Somerville Road, Footscray Road, Port of Melbourne and Victoria Street/Parade at Carlton, Burke Road in Camberwell, Canterbury Road, and intersects with the M3 at Ringwood.</p>
+<div class="inline-figure"><img src="media/image91.png" style="width:100.0%"></div>
+<p><span id="X964f6822ed7f83779f3a3df4c11e2468dfdf361" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Derrimut to Montrose</td>
+<td>01:05:50</td>
+<td>01:31:00</td>
+<td>1.217</td>
+<td>00:33:14</td>
+<td>01:39:49</td>
+<td>1.967</td>
+<td>52.9</td>
+</tr>
+<tr class="even">
+<td>Montrose to Derrimut</td>
+<td>01:12:04</td>
+<td>01:27:00</td>
+<td>1.127</td>
+<td>00:50:13</td>
+<td>01:29:05</td>
+<td>1.373</td>
+<td>52.9</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times for journeys from Derrimut to Montrose was approximately 1 hour and 6 minutes at 4am and the lowest uncertainty was also at 4am with an interquartile range of around 33 minutes. The longest median travel times and greatest uncertainty were at 3pm with a median of 1 hour and 31 minutes and an interquartile range of 1 hour and 40 minutes.</p>
+<p>The best travel times and lowest uncertainty travelling from Montrose to Derrimut were at 4am and 5am, respectively, with a median travel time of 1 hour and 12 minutes and an interquartile range of around 50 minutes. The longest median travel times and greatest uncertainty were at 3pm with a median of 1 hour and 27 minutes and an interquartile range of 1 hour and 29 minutes.</p>
+<div class="inline-figure"><img src="media/image92.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image93.png" style="width:100.0%"></div>
+</div>
+<div id="route-35---hume-highway-to-m80-m80-to-hume-highway" class="section level2 unnumbered">
+<h2>Route 35 - Hume Highway to M80 / M80 to Hume Highway<a class="anchor" aria-label="anchor" href="#route-35---hume-highway-to-m80-m80-to-hume-highway"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route extends north from the Metropolitan Ring Road (M80) past Broadmeadows to Roxburgh Park and then east through Somerton to the intersection with Sydney Road (old Hume Highway). It serves light industrial areas around Somerton and uses Pascoe Vale and Somerton Roads.</p>
+<div class="inline-figure"><img src="media/image94.png" style="width:100.0%"></div>
+<p><span id="X42f71551253c5fa0383f507f9991776c5bbaeb7" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Hume Highway to M80</td>
+<td>00:08:37</td>
+<td>00:15:15</td>
+<td>1.233</td>
+<td>00:03:06</td>
+<td>00:17:39</td>
+<td>2.750</td>
+<td>8.3</td>
+</tr>
+<tr class="even">
+<td>M80 to Hume Highway</td>
+<td>00:08:32</td>
+<td>00:17:03</td>
+<td>1.280</td>
+<td>00:03:06</td>
+<td>00:25:20</td>
+<td>2.905</td>
+<td>8.3</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times for journeys from the Hume Highway to the M80 was around 9 minutes at 4am and the lowest uncertainty was at 4am with an interquartile range of around 3 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of approximately 15 minutes and an interquartile range of almost 18 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from the M80 to the Hume Highway were at 2am with a median travel time of 8.5 minutes and an interquartile range of 3 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of 17 minutes and an interquartile range of around 25 minutes.</p>
+<div class="inline-figure"><img src="media/image95.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image96.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="route-40---m2-to-doncaster-doncaster-to-m2" class="section level2 unnumbered">
+<h2>Route 40 - M2 to Doncaster / Doncaster to M2<a class="anchor" aria-label="anchor" href="#route-40---m2-to-doncaster-doncaster-to-m2"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route extends from Doncaster in the east to the M2 at Strathmore, north of the CBD. The route passes suburbs including Heidelberg, Preston and Coburg, incorporating Manningham Road, Banksia Street and Bell Street along its length.</p>
+<div class="inline-figure"><img src="media/image97.png" style="width:100.0%"></div>
+<p><span id="X6c5d07dbc84d120f6c2a798359ec5f64a7d81ec" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>M2 to Doncaster</td>
+<td>00:19:57</td>
+<td>00:30:55</td>
+<td>1.264</td>
+<td>00:05:33</td>
+<td>00:29:10</td>
+<td>2.838</td>
+<td>18.6</td>
+</tr>
+<tr class="even">
+<td>Doncaster to M2</td>
+<td>00:20:46</td>
+<td>00:31:31</td>
+<td>1.228</td>
+<td>00:07:38</td>
+<td>00:29:58</td>
+<td>2.135</td>
+<td>18.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from the M2 to Doncaster were at 4am with a median travel time of 20 minutes and an interquartile range of 5.5 minutes. The longest median travel times was at 8am with a median of approximately 31 minutes and the greatest uncertainty at 4pm with an interquartile range of around 29 minutes.</p>
+<p>The best travel times and lowest uncertainty travelling from Doncaster to the M2 were at 3am and midnight, respectively, with a median travel time of around 21 minutes and an interquartile range of around 8 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of 31.5 minutes and an interquartile range of 30 minutes.</p>
+<div class="inline-figure"><img src="media/image98.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image99.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="route-55---hume-freeway-to-montague-street-montague-st-to-hume-freeway" class="section level2 unnumbered">
+<h2>Route 55 - Hume Freeway to Montague Street / Montague St to Hume Freeway<a class="anchor" aria-label="anchor" href="#route-55---hume-freeway-to-montague-street-montague-st-to-hume-freeway"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route connects the Hume Freeway at Craigieburn and Montague Street in south Melbourne via Sydney Road through Somerton, Coburg and North Melbourne, skirting the CBD along Dudley Street and Wurundjeri Way.</p>
+<div class="inline-figure"><img src="media/image100.png" style="width:100.0%"></div>
+<p><span id="X19ee08e5e9b496a1b8ffb443de111a9241879af" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Hume Freeway to Montague Street</td>
+<td>00:33:18</td>
+<td>00:48:38</td>
+<td>1.215</td>
+<td>00:19:43</td>
+<td>01:47:57</td>
+<td>2.360</td>
+<td>28</td>
+</tr>
+<tr class="even">
+<td>Montague St to Hume Freeway</td>
+<td>00:33:42</td>
+<td>00:51:28</td>
+<td>1.240</td>
+<td>00:17:18</td>
+<td>01:32:05</td>
+<td>2.685</td>
+<td>28</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best travel times and lowest uncertainty travelling from the Hume Freeway to Montague Street were at 4am and 5am, respectively, with a median travel time of approximately 33 minutes and an interquartile range of around 20 minutes. The longest median travel times and greatest uncertainty were at 10am with a median of approximately 49 minutes and an interquartile range of 1 hour and 48 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from Montague Street to the Hume Freeway were at 4am with a median travel time of approximately 34 minutes and an interquartile range of around 17 minutes. The longest median travel times was 51.5 minutes at 4pm and the greatest uncertainty was at 10am with an interquartile range of 1 hour and 32 minutes.</p>
+<div class="inline-figure"><img src="media/image101.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image102.png" style="width:100.0%"></div>
+</div>
+<div id="route-56---laverton-to-spotswood-spotswood-to-laverton" class="section level2 unnumbered">
+<h2>Route 56 - Laverton to Spotswood / Spotswood to Laverton<a class="anchor" aria-label="anchor" href="#route-56---laverton-to-spotswood-spotswood-to-laverton"><i class="fas fa-link"></i></a>
+</h2>
+<p>This surface route travels a short distance (9 kilometres) between Laverton and Spotswood in Melbourne’s west using Dohertys Road, Grieve Parade and Blackshaws Road and passes a number of light industrial areas.</p>
+<div class="inline-figure"><img src="media/image103.png" style="width:100.0%"></div>
+<p><span id="X899737a6952121908f8679acaf2cc64d8869565" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Laverton to Spotswood</td>
+<td>00:12:36</td>
+<td>00:15:49</td>
+<td>1.101</td>
+<td>00:05:32</td>
+<td>00:14:06</td>
+<td>1.442</td>
+<td>9.1</td>
+</tr>
+<tr class="even">
+<td>Spotswood to Laverton</td>
+<td>00:12:41</td>
+<td>00:17:40</td>
+<td>1.153</td>
+<td>00:05:54</td>
+<td>00:25:19</td>
+<td>2.001</td>
+<td>9.1</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from Laverton to Spotswood were at 10pm with a median travel time of just under 13 minutes and an interquartile range of 5.5 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of approximately 16 minutes and an interquartile range of 14 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from Spotswood to Laverton were at 7pm with a median travel time of around 13 minutes and an interquartile range of around 6 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of around 18 minutes and an interquartile range of just over 25 minutes.</p>
+<div class="inline-figure"><img src="media/image104.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image105.png" style="width:100.0%"></div>
+</div>
+<div id="route-58---greenvale-to-yan-yean-road-yan-yean-road-to-greenvale" class="section level2 unnumbered">
+<h2>Route 58 - Greenvale to Yan Yean Road / Yan Yean Road to Greenvale<a class="anchor" aria-label="anchor" href="#route-58---greenvale-to-yan-yean-road-yan-yean-road-to-greenvale"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route extends across Melbourne’s northern fringe connecting Mickleham Road in the west and the intersection of Gorge Road and Yan Yean Road near Plenty in northeast Melbourne. It uses Somerton Road, Cooper Street, High Street and McDonalds Road.</p>
+<div class="inline-figure"><img src="media/image106.png" style="width:100.0%"></div>
+<p><span id="X241a3be41ae3e8c06b33672fdc7f3f6cae4a02d" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Greenvale to Yan Yean Road</td>
+<td>00:26:02</td>
+<td>00:37:29</td>
+<td>1.164</td>
+<td>00:15:31</td>
+<td>00:40:18</td>
+<td>1.589</td>
+<td>22.3</td>
+</tr>
+<tr class="even">
+<td>Yan Yean Road to Greenvale</td>
+<td>00:24:47</td>
+<td>00:36:37</td>
+<td>1.201</td>
+<td>00:13:59</td>
+<td>00:46:56</td>
+<td>1.716</td>
+<td>22.2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times for journeys from Greenvale to Yan Yean Road was around 26 minutes at 9pm and the lowest uncertainty was at 9pm with an interquartile range of 15.5 minutes. The longest median travel times and greatest uncertainty were at 3pm with a median of 37.5 minutes and an interquartile range of around 40 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from Yan Yean Road to Greenvale were at 3am with a median travel time of around 25 minutes and an interquartile range of 14 minutes. The longest median travel times were around 37 minutes at 3pm and the greatest uncertainty were at 5pm with an interquartile range of 47 minutes.</p>
+<div class="inline-figure"><img src="media/image107.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image108.png" style="width:100.0%"></div>
+</div>
+<div id="a60---m3-to-southbank-southbank-to-m3" class="section level2 unnumbered">
+<h2>A60 - M3 to Southbank / Southbank to M3<a class="anchor" aria-label="anchor" href="#a60---m3-to-southbank-southbank-to-m3"><i class="fas fa-link"></i></a>
+</h2>
+<p>This surface route travels southeast from the Melbourne CBD roughly parallel to, but south of, the M1 (East). From Southbank it passes through suburbs including Prahran, Oakleigh and Springvale before meeting the M3 at Noble Park. It is also known as the Princes Highway.</p>
+<div class="inline-figure"><img src="media/image109.png" style="width:100.0%"></div>
+<p><span id="X060172545457d6515fc144f8fe648b308e76e45" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>M3 to Southbank</td>
+<td>00:26:46</td>
+<td>00:39:31</td>
+<td>1.212</td>
+<td>00:09:06</td>
+<td>00:33:12</td>
+<td>2.142</td>
+<td>26.9</td>
+</tr>
+<tr class="even">
+<td>Southbank to M3</td>
+<td>00:26:12</td>
+<td>00:37:38</td>
+<td>1.177</td>
+<td>00:08:54</td>
+<td>00:34:34</td>
+<td>1.939</td>
+<td>26.8</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best travel times and lowest uncertainty travelling from the M3 to Southbank were at 3am and 2am, respectively, with a median travel time of approximately 27 minutes and an interquartile range of around 9 minutes. The longest median travel times was around 39.5 minutes at 3pm and the greatest uncertainty was at 5pm with an interquartile range of around 33 minutes.</p>
+<p>The best travel times and lowest uncertainty travelling from Southbank to M3 were at 3am and 5am, respectively, with a median travel time of approximately 26 minutes and an interquartile range of around 9 minutes. The longest median travel times were approximately 38 minutes at 4pm and the greatest uncertainty were at 5pm with an interquartile range of 34.5 minutes.</p>
+<div class="inline-figure"><img src="media/image110.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image111.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="m1-east---city-to-m420-m420-to-city" class="section level2 unnumbered">
+<h2>M1 (East) - City to M420 / M420 to City<a class="anchor" aria-label="anchor" href="#m1-east---city-to-m420-m420-to-city"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route follows the M1 connecting Port Melbourne and the South Gippsland Freeway (M420) on Melbourne’s southeast fringe. It serves light industrial areas around Dandenong and interregional freight from Gippsland. For most of its length it is known as the Monash Freeway.</p>
+<div class="inline-figure"><img src="media/image112.png" style="width:100.0%"></div>
+<p><span id="X370b022259ef4df58b66141866c4bb8dc08ece3" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>City to M420</td>
+<td>00:26:23</td>
+<td>00:39:29</td>
+<td>1.099</td>
+<td>00:05:27</td>
+<td>00:40:33</td>
+<td>2.623</td>
+<td>36.0</td>
+</tr>
+<tr class="even">
+<td>M420 to City</td>
+<td>00:26:31</td>
+<td>00:37:02</td>
+<td>1.101</td>
+<td>00:06:50</td>
+<td>00:32:59</td>
+<td>2.180</td>
+<td>36.5</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times for journeys from the city to the M420 was around 26 minutes at 5am and the lowest uncertainty was at 5am with an interquartile range of 5.5 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of 39.5 minutes and an interquartile range of around 41.5 minutes.</p>
+<p>The best travel times and lowest uncertainty travelling from the M420 to the city were at 2am and 5am, respectively, with a median travel time of 26.5 minutes and an interquartile range of around 7 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of 37 minutes and an interquartile range of 33 minutes.</p>
+<div class="inline-figure"><img src="media/image113.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image114.png" style="width:100.0%"></div>
+</div>
+<div id="m1-west---city-to-m80-m80-to-city" class="section level2 unnumbered">
+<h2>M1 (West) - City to M80 / M80 to City<a class="anchor" aria-label="anchor" href="#m1-west---city-to-m80-m80-to-city"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route follows the West Gate Freeway (M1) connecting at its confluence with the Western Ring Road (M80) at Altona and the M2 at Port Melbourne. It serves extensive freight areas around the Port precinct and in Melbourne’s west.</p>
+<div class="inline-figure"><img src="media/image115.png" style="width:100.0%"></div>
+<p><span id="X2344bb676e3e5aceeaa9b0021625b7fadf9d43d" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>City to M80</td>
+<td>00:07:11</td>
+<td>00:14:14</td>
+<td>1.272</td>
+<td>00:01:19</td>
+<td>00:14:10</td>
+<td>3.766</td>
+<td>9.0</td>
+</tr>
+<tr class="even">
+<td>M80 to City</td>
+<td>00:07:32</td>
+<td>00:11:58</td>
+<td>1.199</td>
+<td>00:02:03</td>
+<td>00:12:30</td>
+<td>2.497</td>
+<td>9.0</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from the city to the M80 were at 5am with a median travel time of around 7 minutes and an interquartile range of 79 seconds. The longest median travel times was around 14 minutes at 4pm and the greatest uncertainty was at 3pm with an interquartile range of around 14 minutes.</p>
+<p>The best median travel times for journeys from the M80 to the city were 7.5 minutes at 5am and the lowest uncertainty was at 5am with an interquartile range of 2 minutes. The longest median travel times were at 8am with a median of 12 minutes and the greatest uncertainty at 10pm with an interquartile range of 12.5 minutes.</p>
+<div class="inline-figure"><img src="media/image116.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image117.png" style="width:100.0%"></div>
+</div>
+<div id="m2---citylink-then-tullamarine-tullamarine-then-citylink" class="section level2 unnumbered">
+<h2>M2 - CityLink then Tullamarine / Tullamarine then CityLink<a class="anchor" aria-label="anchor" href="#m2---citylink-then-tullamarine-tullamarine-then-citylink"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route connects Melbourne Airport and the M1 at Port Melbourne via the CityLink toll road and Tullamarine Freeway.</p>
+<div class="inline-figure"><img src="media/image118.png" style="width:100.0%"></div>
+<p><span id="X63395b27458b0c188111e5c7c6648dd4f4bcf45" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>CityLink then Tullamarine</td>
+<td>00:14:54</td>
+<td>00:15:34</td>
+<td>1.013</td>
+<td>00:01:15</td>
+<td>00:04:04</td>
+<td>1.716</td>
+<td>19.8</td>
+</tr>
+<tr class="even">
+<td>Tullamarine then CityLink</td>
+<td>00:14:32</td>
+<td>00:15:46</td>
+<td>1.019</td>
+<td>00:00:53</td>
+<td>00:05:41</td>
+<td>2.214</td>
+<td>19.8</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from CityLink then Tullamarine were at 4am with a median travel time of 15 minutes and an interquartile range of 75 seconds. The longest median travel times and greatest uncertainty were at 5pm with a median of around 15.5 minutes and an interquartile range of 4 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from Tullamarine then CityLink were at 9pm with a median travel time of 14.5 minutes and an interquartile range of 53 seconds. The longest median travel times and greatest uncertainty were at 8am with a median of around 16 minutes and an interquartile range of approximately 6 minutes.</p>
+<div class="inline-figure"><img src="media/image119.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image120.png" style="width:100.0%"></div>
+</div>
+<div id="m3---frankston-to-hoddle-street-hoddle-st-to-frankston" class="section level2 unnumbered">
+<h2>M3 - Frankston to Hoddle Street / Hoddle St to Frankston<a class="anchor" aria-label="anchor" href="#m3---frankston-to-hoddle-street-hoddle-st-to-frankston"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route runs between Abbotsford, northeast of the CBD, and Frankston in Melbourne’s far south east. It uses the Eastern Freeway, Eastlink and the Frankston Freeway.</p>
+<div class="inline-figure"><img src="media/image121.png" style="width:100.0%"></div>
+<p><span id="X7e43c33474a1d9f6cededeee9393545041a28ec" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Frankston to Hoddle Street</td>
+<td>00:33:55</td>
+<td>00:37:21</td>
+<td>1.038</td>
+<td>00:04:52</td>
+<td>00:17:48</td>
+<td>1.679</td>
+<td>53.0</td>
+</tr>
+<tr class="even">
+<td>Hoddle St to Frankston</td>
+<td>00:33:55</td>
+<td>00:41:55</td>
+<td>1.047</td>
+<td>00:05:21</td>
+<td>00:18:23</td>
+<td>1.606</td>
+<td>53.3</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from Frankston to Hoddle Street were at 5am with a median travel time of around 34 minutes and an interquartile range of around 5 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of approximately 37 minutes and an interquartile range of around 18 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from Hoddle St to Frankston were at midnight with a median travel time of approximately 34 minutes and an interquartile range of around 5 minutes. The longest median travel times and greatest uncertainty were at 4pm with a median of around 42 minutes and an interquartile range of around 18 minutes.</p>
+<div class="inline-figure"><img src="media/image122.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image123.png" style="width:100.0%"></div>
+</div>
+<div id="m420---monash-freeway-to-south-gippsland-highway-south-gippsland-highway-to-monash-freeway" class="section level2 unnumbered">
+<h2>M420 - Monash Freeway to South Gippsland Highway / South Gippsland Highway to Monash Freeway<a class="anchor" aria-label="anchor" href="#m420---monash-freeway-to-south-gippsland-highway-south-gippsland-highway-to-monash-freeway"><i class="fas fa-link"></i></a>
+</h2>
+<p>This short (4.5 kilometre) route connects the M1 (East) to the South Gippsland Highway at Lyndhurst, servicing industrial areas in Melbourne’s south east, via the South Gippsland Freeway.</p>
+<div class="inline-figure"><img src="media/image124.png" style="width:100.0%"></div>
+<p><span id="X720a8cb01eb74bc710a6a6b80a24b7b8d56e962" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Monash Freeway to South Gippsland Highway</td>
+<td>00:02:41</td>
+<td>00:03:22</td>
+<td>1.073</td>
+<td>00:00:35</td>
+<td>00:01:32</td>
+<td>1.389</td>
+<td>4.2</td>
+</tr>
+<tr class="even">
+<td>South Gippsland Highway to Monash Freeway</td>
+<td>00:03:03</td>
+<td>00:03:40</td>
+<td>1.062</td>
+<td>00:00:46</td>
+<td>00:02:43</td>
+<td>1.520</td>
+<td>4.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and lowest uncertainty for journeys from the Monash Freeway to South Gippsland Highway were at 5am with a median travel time of approximately 3 minutes and an interquartile range of 35 seconds. The longest median travel times and greatest uncertainty were at 4pm with a median of around 3 minutes and an interquartile range of 1.5 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from South Gippsland Highway to the Monash Freeway were at 4am with a median travel time of around 3 minutes and an interquartile range of 46 seconds. The longest median travel times was at 6am with a median of around 4 minutes and the greatest uncertainty was at 8am with an interquartile range of around 3 minutes.</p>
+<div class="inline-figure"><img src="media/image125.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image126.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="m79---essendon-to-gap-road-gap-road-to-essendon" class="section level2 unnumbered">
+<h2>M79 - Essendon to Gap Road / Gap Road to Essendon<a class="anchor" aria-label="anchor" href="#m79---essendon-to-gap-road-gap-road-to-essendon"><i class="fas fa-link"></i></a>
+</h2>
+<p>This motorway route follows the A79/M79 from Gap Road, west of Sunbury, to Essendon where it joins the CityLink toll road. For most of its length it is known as the Calder Freeway.</p>
+<div class="inline-figure"><img src="media/image127.png" style="width:100.0%"></div>
+<p><span id="X28d62842433288f2cb058ff1c02fefabaecf7f0" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Essendon to Gap Road</td>
+<td>00:18:25</td>
+<td>00:23:30</td>
+<td>1.048</td>
+<td>00:01:31</td>
+<td>00:14:10</td>
+<td>2.454</td>
+<td>27.3</td>
+</tr>
+<tr class="even">
+<td>Gap Road to Essendon</td>
+<td>00:16:48</td>
+<td>00:23:16</td>
+<td>1.079</td>
+<td>00:01:02</td>
+<td>00:12:40</td>
+<td>3.166</td>
+<td>27.2</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best travel times and lowest uncertainty travelling from Essendon to Gap Road were at 11pm and 8pm, respectively, with a median travel time of approximately 18 minutes and an interquartile range of 1.5 minutes. The longest median travel times and greatest uncertainty were at 5pm with a median of 23.5 minutes and an interquartile range of around 14 minutes.</p>
+<p>The best median travel times for journeys from Gap Road to Essendon was around 17 minutes at 4am and the lowest uncertainty was at 4am with an interquartile range of just over 1 minute. The longest median travel times and greatest uncertainty were at 7am with a median of approximately 23 minutes and an interquartile range of just under 13 minutes.</p>
+<div class="inline-figure"><img src="media/image128.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image129.png" style="width:100.0%"></div>
+</div>
+<div id="m80---altona-to-greensborough-greensborough-to-altona" class="section level2 unnumbered">
+<h2>M80 - Altona to Greensborough / Greensborough to Altona<a class="anchor" aria-label="anchor" href="#m80---altona-to-greensborough-greensborough-to-altona"><i class="fas fa-link"></i></a>
+</h2>
+<p>This 38 kilometre route follows the M80 (Western Ring Road) in the west and north of Melbourne. It passes through the western outskirts of the Melbourne metropolitan area as the Western Ring Road, meets the M1 and proceeds to the Greensborough Bypass in north-east Melbourne as the Metropolitan Ring Road.</p>
+<div class="inline-figure"><img src="media/image130.png" style="width:100.0%"></div>
+<p><span id="X34581efa2899360377c181fa92636ad9b45aa0b" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Altona to Greensborough</td>
+<td>00:24:56</td>
+<td>00:39:29</td>
+<td>1.105</td>
+<td>00:04:18</td>
+<td>00:28:41</td>
+<td>2.377</td>
+<td>37.5</td>
+</tr>
+<tr class="even">
+<td>Greensborough to Altona</td>
+<td>00:24:32</td>
+<td>00:28:35</td>
+<td>1.061</td>
+<td>00:03:42</td>
+<td>00:11:52</td>
+<td>2.007</td>
+<td>37.4</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best travel times and lowest uncertainty travelling from Altona to Greensborough were at 8pm and 7pm with a median travel time of around 25 minutes and an interquartile range of just over 4 minutes. The longest median travel times were at 4pm with a median of 39.5 minutes and the greatest uncertainty at 5pm with an interquartile range of around 29 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from Greensborough to Altona were at 5am with a median travel time of 24.5 minutes and an interquartile range of around 4 minutes. The longest median travel times was 28.5 minutes at 4pm and the greatest uncertainty was at 7am with an interquartile range of around 12 minutes.</p>
+<div class="inline-figure"><img src="media/image131.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image132.png" style="width:100.0%"></div>
+</div>
+<div id="princes-freeway---geelong-ring-road-to-m80-m80-to-geelong-ring-road" class="section level2 unnumbered">
+<h2>Princes Freeway - Geelong Ring Road to M80 / M80 to Geelong Ring Road<a class="anchor" aria-label="anchor" href="#princes-freeway---geelong-ring-road-to-m80-m80-to-geelong-ring-road"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route connects Geelong to the Melbourne orbital road network. It also serves Melbourne’s expanding Western Suburbs.</p>
+<div class="inline-figure"><img src="media/image133.png" style="width:100.0%"></div>
+<p><span id="Xb11286ec94dca17c5222f8f8e7454da67edb1d7" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Geelong Ring Road to M80</td>
+<td>00:27:58</td>
+<td>00:36:11</td>
+<td>1.055</td>
+<td>00:01:31</td>
+<td>00:20:21</td>
+<td>4.009</td>
+<td>45.4</td>
+</tr>
+<tr class="even">
+<td>M80 to Geelong Ring Road</td>
+<td>00:27:53</td>
+<td>00:29:11</td>
+<td>1.024</td>
+<td>00:01:58</td>
+<td>00:06:17</td>
+<td>1.898</td>
+<td>45.1</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best median travel times and least uncertainty for journeys from Geelong Ring Road to the M80 were at 4am with a median travel time of 28 minutes and an interquartile range of 1.5 minutes. The longest median travel times was around 36 minutes at 7am and the greatest uncertainty was at 8am with an interquartile range of around 20 minutes.</p>
+<p>The best median travel times and lowest uncertainty for journeys from the M80 to Geelong Ring Road were at 1am with a median travel time of just under 28 minutes and an interquartile range of 2 minutes. The longest median travel times and greatest uncertainty were at 8am with a median of around 29 minutes and an interquartile range of approximately 6 minutes.</p>
+<div class="inline-figure"><img src="media/image134.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image135.png" style="width:100.0%"></div>
+<p><font size="1">Shortest and longest route travel times only available for 2021 and 2022 for this route.</font></p>
+</div>
+<div id="western-freeway---bacchus-marsh-to-derrimut-derrimut-to-bacchus-marsh" class="section level2 unnumbered">
+<h2>Western Freeway - Bacchus Marsh to Derrimut / Derrimut to Bacchus Marsh<a class="anchor" aria-label="anchor" href="#western-freeway---bacchus-marsh-to-derrimut-derrimut-to-bacchus-marsh"><i class="fas fa-link"></i></a>
+</h2>
+<p>This route follows the Western Freeway (M8) linking Bacchus Marsh west of Melbourne and Derrimut where it meets the M80 (Western Ring Road).</p>
+<div class="inline-figure"><img src="media/image136.png" style="width:100.0%"></div>
+<p><span id="Xfac506941fc41e95a88b4c420002a0f8481dd91" class="anchor"></span></p>
+<div class="inline-table"><table style="width:100%;" class="table table-sm">
+<colgroup>
+<col width="14%">
+<col width="11%">
+<col width="18%">
+<col width="4%">
+<col width="20%">
+<col width="19%">
+<col width="4%">
+<col width="6%">
+</colgroup>
+<thead><tr class="header">
+<th>Direction</th>
+<th>Shortest median travel time</th>
+<th>Longest median travel time</th>
+<th>METR</th>
+<th>Smallest Uncertainty Range</th>
+<th>Longest Uncertainty Range</th>
+<th>MEUR</th>
+<th>Route distance</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Bacchus Marsh to Derrimut</td>
+<td>00:21:49</td>
+<td>00:25:12</td>
+<td>1.041</td>
+<td>00:02:20</td>
+<td>00:14:54</td>
+<td>2.190</td>
+<td>35.7</td>
+</tr>
+<tr class="even">
+<td>Derrimut to Bacchus Marsh</td>
+<td>00:22:04</td>
+<td>00:32:11</td>
+<td>1.077</td>
+<td>00:01:56</td>
+<td>00:20:04</td>
+<td>3.007</td>
+<td>35.6</td>
+</tr>
+</tbody>
+</table></div>
+<p>The best travel times and lowest uncertainty travelling from Bacchus Marsh to Derrimut were at 8pm and 7pm, respectively, with a median travel time of around 22 minutes and an interquartile range of around 2 minutes. The longest median travel times and greatest uncertainty were at 7am with a median of just over 25 minutes and an interquartile range of approximately 15 minutes.</p>
+<p>The best median travel times and least uncertainty for journeys from Derrimut to Bacchus Marsh were at 8pm with a median travel time of 22 minutes and an interquartile range of 2 minutes. The longest median travel times was at 5pm with a median of around 32 minutes and the greatest uncertainty was at 4pm with an interquartile range of 20 minutes.</p>
+<div class="inline-figure"><img src="media/image137.png" style="width:100.0%"></div>
+<div class="inline-figure"><img src="media/image138.png" style="width:100.0%"></div>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="sydney.html">Sydney</a></div>
+<div class="next"><a href="brisbane.html">Brisbane</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#melbourne">Melbourne</a></li>
+<li><a class="nav-link" href="#route-13-49---monash-freeway-to-south-gippsland-highway-south-gippsland-highway-to-monash-freeway">Route 13-49 - Monash Freeway to South Gippsland Highway / South Gippsland Highway to Monash Freeway</a></li>
+<li><a class="nav-link" href="#route-15---beach-road-to-surrey-hills-surrey-hills-to-beach-road">Route 15 - Beach Road to Surrey Hills / Surrey Hills to Beach Road</a></li>
+<li><a class="nav-link" href="#route-22---ferntree-gully-to-m1-m1-to-ferntree-gully">Route 22 - Ferntree Gully to M1 / M1 to Ferntree Gully</a></li>
+<li><a class="nav-link" href="#route-3---albert-park-to-cheltenham-cheltenham-to-albert-park">Route 3 - Albert Park to Cheltenham / Cheltenham to Albert Park</a></li>
+<li><a class="nav-link" href="#route-32---derrimut-to-montrose-montrose-to-derrimut">Route 32 - Derrimut to Montrose / Montrose to Derrimut</a></li>
+<li><a class="nav-link" href="#route-35---hume-highway-to-m80-m80-to-hume-highway">Route 35 - Hume Highway to M80 / M80 to Hume Highway</a></li>
+<li><a class="nav-link" href="#route-40---m2-to-doncaster-doncaster-to-m2">Route 40 - M2 to Doncaster / Doncaster to M2</a></li>
+<li><a class="nav-link" href="#route-55---hume-freeway-to-montague-street-montague-st-to-hume-freeway">Route 55 - Hume Freeway to Montague Street / Montague St to Hume Freeway</a></li>
+<li><a class="nav-link" href="#route-56---laverton-to-spotswood-spotswood-to-laverton">Route 56 - Laverton to Spotswood / Spotswood to Laverton</a></li>
+<li><a class="nav-link" href="#route-58---greenvale-to-yan-yean-road-yan-yean-road-to-greenvale">Route 58 - Greenvale to Yan Yean Road / Yan Yean Road to Greenvale</a></li>
+<li><a class="nav-link" href="#a60---m3-to-southbank-southbank-to-m3">A60 - M3 to Southbank / Southbank to M3</a></li>
+<li><a class="nav-link" href="#m1-east---city-to-m420-m420-to-city">M1 (East) - City to M420 / M420 to City</a></li>
+<li><a class="nav-link" href="#m1-west---city-to-m80-m80-to-city">M1 (West) - City to M80 / M80 to City</a></li>
+<li><a class="nav-link" href="#m2---citylink-then-tullamarine-tullamarine-then-citylink">M2 - CityLink then Tullamarine / Tullamarine then CityLink</a></li>
+<li><a class="nav-link" href="#m3---frankston-to-hoddle-street-hoddle-st-to-frankston">M3 - Frankston to Hoddle Street / Hoddle St to Frankston</a></li>
+<li><a class="nav-link" href="#m420---monash-freeway-to-south-gippsland-highway-south-gippsland-highway-to-monash-freeway">M420 - Monash Freeway to South Gippsland Highway / South Gippsland Highway to Monash Freeway</a></li>
+<li><a class="nav-link" href="#m79---essendon-to-gap-road-gap-road-to-essendon">M79 - Essendon to Gap Road / Gap Road to Essendon</a></li>
+<li><a class="nav-link" href="#m80---altona-to-greensborough-greensborough-to-altona">M80 - Altona to Greensborough / Greensborough to Altona</a></li>
+<li><a class="nav-link" href="#princes-freeway---geelong-ring-road-to-m80-m80-to-geelong-ring-road">Princes Freeway - Geelong Ring Road to M80 / M80 to Geelong Ring Road</a></li>
+<li><a class="nav-link" href="#western-freeway---bacchus-marsh-to-derrimut-derrimut-to-bacchus-marsh">Western Freeway - Bacchus Marsh to Derrimut / Derrimut to Bacchus Marsh</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong><div class="inline-figure">
+<img src="media/bitre.png" style="width:100.0%">
+Congestion Report 2022</div></strong>" was written by Richard Green and Weihua Chen. It was last built on 2023-05-18.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
